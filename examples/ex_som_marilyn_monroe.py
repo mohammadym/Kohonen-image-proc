@@ -58,7 +58,7 @@ def main():
     som_size = 128
     batch_size = 12
     my_som = Som(matrix_size=som_size, input_size=2, low=0, high=img_size-1, round_values=True)
-    tot_epochs = 2000
+    tot_epochs = 1000
     my_learning_rate = ExponentialDecay(starter_value=0.9, decay_step=50, decay_rate=0.9, staircase=True)
     my_radius = ExponentialDecay(starter_value=np.rint(som_size/5), decay_step=80, decay_rate=0.95, staircase=True)
 
