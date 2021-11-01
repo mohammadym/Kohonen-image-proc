@@ -28,7 +28,7 @@ def main():
         os.makedirs(output_path) 
 
     #Opening the image in greyscale
-    img_size = 128
+    img_size = 512
     img_original = Image.open('./input/horse.jpg')
     img = Image.open('./input/marilyn_filtered.jpg').convert("L") #greyscale
     img_matrix = np.asarray(img, dtype=np.float32)
